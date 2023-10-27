@@ -7,7 +7,6 @@ struct KMP
 	char s[S_SZ], p[P_SZ];
 	ll nxt[P_SZ];
 	VE<PLL> res;
-
 	void Init(ll ls, ll lp)
 	{
 		this->ls = ls;

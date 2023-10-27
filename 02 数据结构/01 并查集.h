@@ -22,6 +22,7 @@ public:
 		}
 		return;
 	}
+	// ll Find(ll m) { return fa[m] == m ? m : fa[m] = Find(fa[m]); }
 	ll Find(ll m)
 	{
 		while (m != fa[m])
