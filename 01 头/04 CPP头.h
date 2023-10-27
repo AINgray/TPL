@@ -20,7 +20,7 @@ namespace my
 {
 #if defined(LOCAL) and not defined(ONLINE_JUDGE)
 #include "D:\VScodeFile\LOCAL\debug.h"
-#define DBG(x) cout << "! " #x " = " << (x) << std::endl
+#define DBG(x) cerr << "! " #x " = " << (x) << std::endl
 #else
 #define dbg(...) ((void)0)
 #define DBG(...) ((void)0)
