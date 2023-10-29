@@ -1,4 +1,9 @@
-// ABC326F
+/*
+ABC326F
+最开始在(0,0) 向右
+n次操作 每次操作左转90或右转90然后走A[I]步
+问能否走到(X,Y) 如何走到
+*/
 #include<bits/stdc++.h>
 using namespace std;
 int A[80],ans[80];
