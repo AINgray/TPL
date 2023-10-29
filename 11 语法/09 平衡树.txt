@@ -1,3 +1,7 @@
+平衡树
+
+// 排名是从0开始的 PLL是为了不去重
+
 __gnu_pbds :: tree
 #include <ext/pb_ds/assoc_container.hpp>  // 因为tree定义在这里 所以需要包含这个头文件
 #include <ext/pb_ds/tree_policy.hpp>
@@ -45,10 +49,12 @@ typedef pair<int, int> pii;
 #define mp make_pair
 #include <ext/pb_ds/assoc_container.hpp>
 #include <ext/pb_ds/tree_policy.hpp>
-__gnu_pbds ::tree<pair<int, int>, __gnu_pbds::null_type, less<pair<int, int> >,
-                  __gnu_pbds::rb_tree_tag,
-                  __gnu_pbds::tree_order_statistics_node_update>
-    trr;
+__gnu_pbds::tree<PLL,
+__gnu_pbds::null_type, 
+std::less<PLL>,
+__gnu_pbds::rb_tree_tag,
+__gnu_pbds::tree_order_statistics_node_update>
+trr;
 
 int main() {
   int cnt = 0;
