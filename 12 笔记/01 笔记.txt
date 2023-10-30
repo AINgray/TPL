@@ -20,3 +20,5 @@ db &x 比 db x 更精确 引用比赋值精确
 ll (&a)[SZ][SZ] (严格等于SZ)
 ll *a / ll a[] (SZ自己管理)(一维)
 ll *a[SZ] / ll a[][SZ] (SZ自己管理)(二维)
+
+TEST
