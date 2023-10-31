@@ -49,5 +49,7 @@ protected:
 	ll p[SZ + 1];
 	ll hs[SZ + 1];
 };
+constexpr ll BASE1 = 233, MOD1 = 1004535809;
+constexpr ll BASE2 = 239, MOD2 = 2013265921;
 Hash<BASE1, MOD1, SZ> h1;
 Hash<BASE2, MOD2, SZ> h2;

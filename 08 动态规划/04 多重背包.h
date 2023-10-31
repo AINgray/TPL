@@ -54,3 +54,21 @@ struct Pack
 	}
 };
 Pack<SZ, SZ> pack;
+/*
+可以把每个物品拆成log份物品进行零一背包（二进制）
+多重背包
+n个物品 V大小背包 最多得f[V]价值
+i号物品占体积v[i] 价值w[i] 最多p[i]个
+每个物品最多拿p[i]个 可以不拿
+FOR(i,1,n)
+{
+	ll num=min(p[i],V/v[i]);
+	for(ll k=1LL;num>0;k<<=1)
+	{
+		if(k>num) k=num;
+		num-=k;
+		ROF(j,V,v[i]*k)
+		Max(f[j],f[j-v[i]*k]+w[i]*k);
+	}
+}
+*/

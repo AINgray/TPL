@@ -15,4 +15,4 @@
 04 整理格式
 AStyle->格式化选项(选择Allman 选择tabs 全打钩)
 05 创建文件
-mine.cpp mine.in mine.out在mine文件夹下
+head.cpp test.in test.out在code文件夹下
