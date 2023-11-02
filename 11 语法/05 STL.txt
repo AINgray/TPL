@@ -1,6 +1,9 @@
 重载== != 用于hash等容器
 重载< 用于有序容器
 
+reverse 逆序 类似sort用法
+v.reserve(1000) 扩容到1000 但是实际sz可能不是1000 避免中途扩容
+
 priority_queue<Node, vector<Node>, cmp> pq;
 struct cmp {
   static bool operator()(const Node& a, const Node& b) const {return a.v < b.v;}

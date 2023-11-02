@@ -9,8 +9,8 @@ int main(void)
 {
 	std::ios::sync_with_stdio(false), cin.tie(nullptr), cout.tie(nullptr);
 #if defined(TEXT_IO) and defined(LOCAL) and not defined(ONLINE_JUDGE)
-	freopen("mine.in", "r", stdin);
-	freopen("mine.out", "w", stdout);
+	freopen("test.in", "r", stdin);
+	freopen("test.out", "w", stdout);
 #endif
 	Main();
 	return 0;

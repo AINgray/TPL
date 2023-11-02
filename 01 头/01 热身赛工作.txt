@@ -1,0 +1,14 @@
+热身赛:
+测试ONLINE_JUDGE等宏
+测试Checker 检查PE
+测试64语法int128等
+测试代码记录功能
+测完CE,RE,PE是否算WA
+测试pb_ds库
+
+Dev:
+注意11没有auto&[u,v]和gcd
+
+VScode:
+测试code runner加宏 编译版本std17 O2 "-std=c++17","-DTEXT_IO","-DLOCAL"
+熟悉快捷键:自动整理 运行 停止 切换 新建 下一组
