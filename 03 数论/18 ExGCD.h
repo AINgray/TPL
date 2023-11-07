@@ -1,5 +1,11 @@
 // a.inv (mod p)
 // 等价于ax+py==1的x
+int inv(int a, int p)
+{
+	int x, y;
+	exgcd(a, p, x, y);
+	return (p + x % p) % p;
+}
 
 // a * x + b * y == gcd(a, b) == g
 ll ExGCD(ll a, ll b, ll &x, ll &y)
