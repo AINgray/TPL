@@ -49,7 +49,7 @@ bool LiEu(ll a, ll b, ll c, ll &x, ll &y)
 	ll g = ExGCD(a, b, x, y);
 	if (c % g != 0)
 		return false;
-	ll k = c / d;
+	ll k = c / g;
 	x *= k;
 	y *= k;
 	return true;
