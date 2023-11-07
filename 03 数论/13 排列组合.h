@@ -13,8 +13,8 @@ template <ll SZ>
 struct AC
 {
 	ll sz;
-	mint fac[SZ];
-	mint fac_inv[SZ];
+	mint fac[SZ+1];
+	mint fac_inv[SZ+1];
 	void Init(ll sz)
 	{
 		this->sz = sz;
