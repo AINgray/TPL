@@ -1,3 +1,6 @@
+// a.inv (mod p)
+// 等价于ax+py==1的x
+
 // a * x + b * y == gcd(a, b) == g
 ll ExGCD(ll a, ll b, ll &x, ll &y)
 {
