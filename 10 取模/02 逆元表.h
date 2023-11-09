@@ -2,7 +2,7 @@
 逆元表
 O(N)批计算逆元
 sz:当前大小
-mod:当前模数
+mod:当前模数 要求是质数
 inv[i]:i的逆元
 Init(sz,mod):O(N)批计算前sz个数在mod下的逆元
 */
