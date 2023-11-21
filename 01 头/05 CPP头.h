@@ -43,7 +43,7 @@ namespace my
 	constexpr int inf = 0x3f3f3f3f;
 	constexpr long long INF = 0x3f3f3f3f3f3f3f3fLL;
 	constexpr db EPS = 1.0e-9;
-	constexpr ll MOD1 = 998244353, MOD2=1e9 + 7
+	constexpr ll MOD1 = 998244353, MOD2 = 1e9 + 7;
 	constexpr ll MOD = MOD1;
 	constexpr ll SZ2 = 1e3 + 3;
 	constexpr ll SZ = 2e5 + 5;
