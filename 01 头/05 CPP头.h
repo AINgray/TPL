@@ -1,5 +1,5 @@
-#define NDEBUG
-#pragma GCC optimize(2)
+// #define NDEBUG
+// #pragma GCC optimize(2)
 #include <bits/stdc++.h>
 using std::cin;
 using std::cout;
