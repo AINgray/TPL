@@ -1,13 +1,16 @@
 #define NDEBUG
 #pragma GCC optimize(2)
 #include <bits/stdc++.h>
-using std::cin, std::cout;
+using std::cin;
+using std::cout;
 using ll = long long;
 using db = double;
 void Main(void);
 int main(void)
 {
-	std::ios::sync_with_stdio(false), cin.tie(nullptr), cout.tie(nullptr);
+	std::ios::sync_with_stdio(false);
+	cin.tie(nullptr);
+	cout.tie(nullptr);
 #if defined(TEXT_IO) and defined(LOCAL) and not defined(ONLINE_JUDGE)
 	freopen("test.in", "r", stdin);
 	freopen("test.out", "w", stdout);
@@ -38,7 +41,12 @@ namespace my
 #define FOR(i, l, r) for (ll i = (l); i <= (r); ++i)
 #define ROF(i, r, l) for (ll i = (r); i >= (l); --i)
 	constexpr int inf = 0x3f3f3f3f;
-	constexpr ll INF = 0x3f3f3f3f3f3f3f3fLL;
+	constexpr long long INF = 0x3f3f3f3f3f3f3f3fLL;
+	constexpr db EPS = 1.0e-9;
+	constexpr ll MOD1 = 998244353, MOD2=1e9 + 7
+	constexpr ll MOD = MOD1;
+	constexpr ll SZ2 = 1e3 + 3;
+	constexpr ll SZ = 2e5 + 5;
 }
 using namespace my;
 namespace fastIO
@@ -162,12 +170,6 @@ namespace fastIO
 	}
 	template <class T, class... Y>
 	bool FIN(T &x, Y &...o) { return FIN(x) and FIN(o...); }
-	void FIN(int *a, ll l, ll r)
-	{
-		FOR(i, l, r)
-		FIN(a[i]);
-		return;
-	}
 	void FIN(ll *a, ll l, ll r)
 	{
 		FOR(i, l, r)
@@ -187,11 +189,9 @@ namespace fastIO
 		return;
 	}
 }
-using fastIO::FIN, fastIO::LIN;
+using fastIO::FIN;
+using fastIO::LIN;
 /**************************************************/
-constexpr db EPS = 1.0e-9;
-constexpr ll MOD = 998244353LL;
-constexpr ll SZ = 1e5 + 5;
 
 void Main(void)
 {

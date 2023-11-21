@@ -27,7 +27,7 @@ int main(void)
 #define FOR(i, l, r) for (ll i = (l); i <= (r); ++i)
 #define ROF(i, r, l) for (ll i = (r); i >= (l); --i)
 /**************************************************/
-constexpr ll SZ = 1e5 + 5;
+constexpr ll SZ = 2e5 + 5;
 
 void Main(void)
 {
