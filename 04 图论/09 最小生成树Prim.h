@@ -14,7 +14,7 @@ public:
 		E[i].clear();
 		return;
 	}
-	void PushE(ll bg, ll ed, ll wt) { E[bg].push_back({ed, wt}); }
+	void Push(ll bg, ll ed, ll wt) { E[bg].push_back({ed, wt}); }
 	ll Build(ll sou)
 	{
 		FOR(i, 0, v_sz)
@@ -66,4 +66,4 @@ protected:
 		bool operator<(const Node &oth) const { return len > oth.len; }
 	};
 };
-Prim<V_SZ> G;
+Prim<SZ> G;

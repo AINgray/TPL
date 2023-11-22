@@ -58,7 +58,7 @@ struct Kruskal
 		dsu.Init(v_sz);
 		return;
 	}
-	void PushE(ll bg, ll ed, ll wt) { E[++e_sz] = (Edge){bg, ed, wt}; }
+	void Push(ll bg, ll ed, ll wt) { E[++e_sz] = (Edge){bg, ed, wt}; }
 	ll Build(void)
 	{
 		ll res = 0;
@@ -80,4 +80,4 @@ struct Kruskal
 		return res;
 	}
 };
-Kruskal<V_SZ, E_SZ> G;
+Kruskal<SZ, SZ> G;
