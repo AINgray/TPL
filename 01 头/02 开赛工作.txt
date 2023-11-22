@@ -8,5 +8,10 @@ Dev:
 04 整理格式
 AStyle->格式化选项(选择Allman 选择tabs 全打钩)
 
+VScode:
+Coderunner executorMap settings.json -std=c++17 -DLOCAL -DTEXT_IO -O2
+settings accept suggest 取消回车补全
+记得保存后编译运行 结束后记得关闭
+
 创建文件
 head.cpp test.in test.out在code文件夹下
