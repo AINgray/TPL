@@ -63,7 +63,7 @@ struct Kruskal
 	{
 		ll res = 0;
 		ll cnt = 0;
-		sort(E + 1, E + e_sz + 1);
+		std::sort(E + 1, E + e_sz + 1);
 		FOR(i, 1, e_sz)
 		{
 			auto &[u, v, wt] = E[i];
