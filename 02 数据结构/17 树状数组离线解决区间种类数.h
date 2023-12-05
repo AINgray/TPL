@@ -11,7 +11,7 @@ void Run(void)
 	std::map<ll,ll> mp;
 	bt.Init(n);
 	ll now=1;
-	for(const auto&[l,r,mex]:qry)
+	for(const auto&[l,r]:qry)
 	{
 		FOR(j,now,r)
 		{
