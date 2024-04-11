@@ -31,9 +31,12 @@ public:
 	}
 	void Build(void)
 	{
-		hs[0] = 0;
+		hs[0] = hsr[0] = 0;
 		FOR(i, 1, sz)
-		hs[i] = hs[i - 1] * BASE % MOD + s[i], hs[i] %= MOD;
+		{
+			hs[i] = hs[i - 1] * BASE % MOD + s[i], hs[i] %= MOD;
+			hsr[i] = hsr[i - 1] * BASE % MOD + s[sz + 1 - i], hsr[i] %= MOD;
+		}
 		return;
 	}
 	ll Qry(ll l, ll r)
@@ -44,10 +47,20 @@ public:
 			return ERR;
 		return (hs[r] - hs[l - 1] * p[r - l + 1] % MOD + MOD) % MOD;
 	}
+	ll QryR(ll L, ll R)
+	{
+		if (R < L)
+			return ERR;
+		if (L < 1 or sz < R)
+			return ERR;
+		ll l = sz + 1 - R;
+		ll r = sz + 1 - L;
+		return (hsr[r] - hsr[l - 1] * p[r - l + 1] % MOD + MOD) % MOD;
+	}
 
 protected:
 	ll p[SZ + 1];
-	ll hs[SZ + 1];
+	ll hs[SZ + 1], hsr[SZ + 1];
 };
 constexpr ll BASE1 = 233, MOD1 = 1004535809;
 constexpr ll BASE2 = 239, MOD2 = 2013265921;

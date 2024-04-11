@@ -4,7 +4,7 @@
 row_sz,col_sz:当前大小
 Init(row_sz,col_sz):O(N)初始化
 Mdf(lu_row,lu_col,rd_row,rd_col,d):O(logNlogN)使a[lu_row ~ rd_row][lu_col ~ rd_col]+=d
-Qry(lu_row,lu_col,rd_row,rd_col,d):O(logNlogN)查询Sum( (lu_row,lu_col) ~ (rd_row,rd_col) )
+Qry(lu_row,lu_col,rd_row,rd_col):O(logNlogN)查询Sum( (lu_row,lu_col) ~ (rd_row,rd_col) )
 */
 template <ll ROW_SZ, ll COL_SZ>
 struct BIT
